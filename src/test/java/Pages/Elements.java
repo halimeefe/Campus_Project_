@@ -23,6 +23,45 @@ public class Elements extends Parent{
     @FindBy(css = "span[class='logo-text ng-star-inserted']")
     public WebElement txtTechnoStudy;
 
+    @FindBy(css = "div[class='details-button']:nth-child(1)")
+    public WebElement geographyDetails;
+
+    @FindBy(xpath = "//*[text()='Gradebook']")
+    public WebElement gradebook;
+
+
+    @FindBy(xpath = "(//div[@comp-id='100']/div)[1]")
+    public WebElement noteInput;
+
+
+    @FindBy(xpath = "//div[@comp-id='103']")
+    public WebElement noteInput1;
+
+
+    @FindBy(css = "[comp-id='105']")
+    public WebElement noteInput2;
+
+
+    @FindBy(css = "[comp-id='107']")
+    public WebElement noteInput3;
+
+
+
+    @FindBy(xpath = "//*[text()='Save']")
+    public WebElement saveButon;
+
+    @FindBy(xpath = "//*[text()=' Yes ']")
+    public WebElement yes;
+
+    @FindBy(xpath = "//div[contains(text(),'successfully')]")
+    public WebElement success;
+
+
+
+
+
+
+
 
 
 
