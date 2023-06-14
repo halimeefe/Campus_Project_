@@ -41,7 +41,6 @@ public class DocumentUploadSteps {
 
     @When("I have to upload documents")
     public void I_have_to_upload_documents() throws AWTException, InterruptedException {
-//
 
         e.clickFunction(e.type);
         e.clickFunction(e.homework);
@@ -49,16 +48,13 @@ public class DocumentUploadSteps {
         e.clickFunction(e.item);
         e.clickFunction(e.formLocal);
 
-       // Thread.sleep(3);
         Robot rbt = new Robot();
 
-        StringSelection dosyaYolu = new StringSelection("C:\\Users\\YASİN TUFAN\\Desktop\\interview\\Mulakat_Sorular.pdf"); //C:\Users\TechnoStudy\Desktop\ornek.txt
+        StringSelection dosyaYolu = new StringSelection("C:\\Users\\YASİN TUFAN\\Desktop\\interview\\Mulakat_Sorular.pdf");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(dosyaYolu, null);
-
 
         rbt.keyPress(KeyEvent.VK_CONTROL); // bu iki tuş şu anda basılmış vaziyette, hafızadaki yapıştırıldı
         rbt.keyPress(KeyEvent.VK_V);
-
 
         rbt.keyRelease(KeyEvent.VK_CONTROL); // tuşlar serbest bırakıldı
         rbt.keyRelease(KeyEvent.VK_V);
@@ -66,7 +62,6 @@ public class DocumentUploadSteps {
         rbt.keyPress(KeyEvent.VK_ENTER); // dosya Entera basılarak gönderildi
         rbt.keyRelease(KeyEvent.VK_ENTER);
 
-        // MyFunc.Bekle(1);
         rbt.keyPress(KeyEvent.VK_TAB); // tuşa basıldı.  down
         rbt.keyRelease(KeyEvent.VK_TAB); // tuş bırakıldı
 
