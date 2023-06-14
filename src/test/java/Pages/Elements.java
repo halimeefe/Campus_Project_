@@ -58,7 +58,34 @@ public class Elements extends Parent{
 
 
 
+    @FindBy(xpath = "(//span[@matbadgesize='small'])[2]")
+    public WebElement calendar;
 
+    @FindBy(xpath = "(//*[text()='11D-TARIH '])[1]")
+    public WebElement tarih;
+
+    @FindBy(xpath = "(//*[text()='Attachments'])[1]")
+    public WebElement attachments;
+
+    @FindBy(xpath = "(//*[@data-icon='plus'])[2]")
+    public WebElement attachFile;
+
+    @FindBy(xpath = "(//mat-select[@role='combobox']//div/div)[4]")
+    public WebElement type;
+
+    @FindBy(xpath = "//*[text()='Please select an item']")
+    public WebElement item;
+
+    @FindBy(xpath = "//*[text()=' Homework ']")
+    public WebElement homework;
+
+
+    @FindBy(xpath = "//*[text()='From Local']")
+    public WebElement formLocal;
+
+
+    @FindBy(css = "span[class='mat-tooltip-trigger']")
+    public WebElement succes;
 
 
 
