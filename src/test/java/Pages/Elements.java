@@ -162,7 +162,7 @@ public class Elements extends Parent {
 
     @FindBy(xpath = "//div[contains(text(),'successfully')]")
     public WebElement success;
-}
+
 
 
 
@@ -195,7 +195,7 @@ public class Elements extends Parent {
     @FindBy(css = "span[class='mat-tooltip-trigger']")
     public WebElement succes;
 
-
+}
 
 
 
