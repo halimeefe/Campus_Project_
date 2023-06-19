@@ -24,6 +24,7 @@ public class Parent {
     WebDriverWait wait = new WebDriverWait(PageDriver.getDriver(), Duration.ofSeconds(20));
 
     public void sendKeysFunc(WebElement element, String text) {
+
         waitUntilVisible(element);
         scrollToElement(element);
         element.clear();
